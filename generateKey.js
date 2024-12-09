@@ -4,6 +4,7 @@ const path = require('path');
 
 // Path to the key file
 const keyFilePath = path.resolve(__dirname, 'indexnow_key.txt');
+console.log(__dirname); // Check where the script is running
 
 // Function to generate a 32-byte hexadecimal key
 const generateHexKey = () => {
@@ -24,4 +25,6 @@ if (!fs.existsSync(keyFilePath)) {
   const savedKey = fs.readFileSync(keyFilePath, 'utf8');
   console.log('Using saved key:', savedKey);
 }
+console.log(`Key will be saved to: ${keyFilePath}`);
+
 
