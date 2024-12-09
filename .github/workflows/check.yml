@@ -23,8 +23,10 @@ jobs:
       # Step 3: Install dependencies
       - name: Install dependencies
         run: |
-          npm install axios cheerio jsdom
-
+          npm install axios cheerio jsdom crypto
+      - name: genere key
+        run: |
+          node  generateKey.js
       # Step 4: Run the SEO checker script
       - name: Run SEO Checker
         run: |
