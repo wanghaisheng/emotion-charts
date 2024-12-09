@@ -23,7 +23,7 @@ jobs:
       # Step 3: Install dependencies
       - name: Install dependencies
         run: |
-          npm install
+          npm install axios cheerio jsdom
 
       # Step 4: Run the SEO checker script
       - name: Run SEO Checker
