@@ -1,9 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 
-const locales = ['', 'en', 'fr', 'zh', 'es', 'de'];  // Define available locales
+const locales = ['', 'fr', 'zh', 'es', 'de'];  // Define available locales
 const baseDir = path.join(__dirname, '/');  // Base directory where the files are located
-const baseUrl = 'https://mood-island.heytcm.com';  // Your base URL
+const baseUrl = 'https://feelingchart.heytcm.com';  // Your base URL
 
 // Function to list all HTML files recursively in a given directory
 function listHtmlFiles(dir) {

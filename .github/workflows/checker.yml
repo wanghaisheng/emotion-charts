@@ -7,9 +7,9 @@ on:
   workflow_dispatch:  # Allow manual trigger with inputs
     inputs:
       website_url:
-        description: 'Website URL to check (e.g., https://yourwebsite.com)'
+        description: 'Website URL to check (e.g., https://feelingchart.heytcm.com)'
         required: true
-        default: 'https://mood-island.heytcm.com'  # Default URL in case it's not provided
+        default: 'https://feelingchart.heytcm.com'  # Default URL in case it's not provided
 
 jobs:
   seo-check:
