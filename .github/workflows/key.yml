@@ -31,3 +31,10 @@ jobs:
     - name: Read the generated key from file
       run: |
         cat indexnow_key.txt  # Display the content of the key file for confirmation
+        
+    - 
+       name: Push
+       run: |
+          git add .
+          git commit -m "${{ env.FAKE_HASH }}" 
+          git push -f
