@@ -26,7 +26,7 @@ jobs:
 
     - name: Run Python script to generate and use key
       run: |
-        python generate_key.py  # Assuming the script is named generate_key.py
+        python generateKey.py  # Assuming the script is named generate_key.py
 
     - name: Read the generated key from file
       run: |
